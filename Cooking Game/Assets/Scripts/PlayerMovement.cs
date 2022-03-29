@@ -7,10 +7,10 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] Rigidbody2D rb;
+    [SerializeField] Animator animator;
     Vector2 movement;
 
     // cached references
-    Rigidbody2D myRigidBody2D;
 
 
     // Update is called once per frame
@@ -19,6 +19,11 @@ public class PlayerMovement : MonoBehaviour
         //Input
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
+
     }
 
     void FixedUpdate()
