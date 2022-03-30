@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollectItem : MonoBehaviour
+public class CollectItem : Interactable
 {   
     [SerializeField] string itemName;
     private void OnTriggerEnter2D(Collider2D collision)

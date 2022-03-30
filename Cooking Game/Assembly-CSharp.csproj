@@ -36,9 +36,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Inventory.cs" />
      <Compile Include="Assets\Scripts\CollectItem.cs" />
+     <Compile Include="Assets\Scripts\Interactable.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <None Include="Assets\Sprites\uipack-rpg\license.txt" />
      <None Include="Assets\Sprites\FreePixelFood\ReadMe.txt" />
+     <None Include="Assets\Sprites\uipack-rpg\Spritesheet\uipack_rpg_sheet.xml" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
