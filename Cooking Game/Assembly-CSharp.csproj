@@ -36,9 +36,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Inventory.cs" />
-     <Compile Include="Assets\Scripts\CollectItem.cs" />
-     <Compile Include="Assets\Scripts\Interactable.cs" />
+     <Compile Include="Assets\Scripts\Inventory.cs" />
+     <Compile Include="Assets\Scripts\PickupItem.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <None Include="Assets\Sprites\uipack-rpg\license.txt" />
      <None Include="Assets\Sprites\FreePixelFood\ReadMe.txt" />
