@@ -97,6 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 1299968909556035498, guid: 2bf1a8573cf9e4244965ce89b088a475,
     type: 3}
+  itemName: Bread
 --- !u!58 &-3789123123034945407
 CircleCollider2D:
   m_ObjectHideFlags: 0

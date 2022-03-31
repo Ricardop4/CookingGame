@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PickupItem : MonoBehaviour
 {
-    private Inventory inventory;
     [SerializeField] GameObject itemButton;
-
+    private Inventory inventory;
+    [SerializeField] int i;
     private void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
@@ -27,6 +27,8 @@ public class PickupItem : MonoBehaviour
                     break;
                 }
             }
+
         }
     }
+
 }

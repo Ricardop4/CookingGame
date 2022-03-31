@@ -6,4 +6,5 @@ public class Inventory : MonoBehaviour
 {
     [SerializeField] public bool[] isFull;
     [SerializeField] public GameObject[] slots;
+
 }
