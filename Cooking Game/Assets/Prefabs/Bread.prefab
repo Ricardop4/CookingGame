@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2359715434624493179}
   - component: {fileID: 823033128688724871}
-  - component: {fileID: -3789123123034945407}
   - component: {fileID: 1975579169931352631}
+  - component: {fileID: -3789123123034945407}
   m_Layer: 0
   m_Name: Bread
   m_TagString: Untagged
@@ -83,6 +83,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1975579169931352631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4366672216242594469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60de8fbfae5e4db4ab46c4ab10a474c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemButton: {fileID: 1299968909556035498, guid: 2bf1a8573cf9e4244965ce89b088a475,
+    type: 3}
 --- !u!58 &-3789123123034945407
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -99,17 +113,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &1975579169931352631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4366672216242594469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a60de8fbfae5e4db4ab46c4ab10a474c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemButton: {fileID: 1299968909556035498, guid: 2bf1a8573cf9e4244965ce89b088a475,
-    type: 3}
