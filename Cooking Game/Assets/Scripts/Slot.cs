@@ -6,7 +6,7 @@ public class Slot : MonoBehaviour
 {
     private Inventory inventory;
     [SerializeField] int i;
-    [SerializeField] string itemName;
+
     private void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();

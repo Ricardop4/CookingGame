@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class RecipeManager : MonoBehaviour
 {
-    
+    [SerializeField] List<GameObject> RecipeResults;
 }

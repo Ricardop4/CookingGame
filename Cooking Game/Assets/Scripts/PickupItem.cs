@@ -6,7 +6,6 @@ public class PickupItem : MonoBehaviour
 {
     [SerializeField] public GameObject itemButton;
     [SerializeField] int i;
-    [SerializeField] string itemName;
     
 
     private Inventory inventory;

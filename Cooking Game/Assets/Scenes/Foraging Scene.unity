@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 59465846}
   m_Layer: 5
   m_Name: Slot (4)
-  m_TagString: Untagged
+  m_TagString: slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,6 +242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 0}
+  i: 0
+  itemName: 
 --- !u!114 &59465844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1229,7 +1231,7 @@ GameObject:
   - component: {fileID: 659810049}
   m_Layer: 5
   m_Name: Slot (3)
-  m_TagString: Untagged
+  m_TagString: slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1266,6 +1268,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 0}
+  i: 0
+  itemName: 
 --- !u!114 &659810047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2005,7 +2009,7 @@ GameObject:
   - component: {fileID: 781478201}
   m_Layer: 5
   m_Name: Slot (5)
-  m_TagString: Untagged
+  m_TagString: slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2042,6 +2046,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 0}
+  i: 0
+  itemName: 
 --- !u!114 &781478199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2108,7 +2114,7 @@ GameObject:
   - component: {fileID: 790960445}
   m_Layer: 5
   m_Name: Slot (2)
-  m_TagString: Untagged
+  m_TagString: slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2145,6 +2151,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 0}
+  i: 0
+  itemName: 
 --- !u!114 &790960443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3102,14 +3110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0c61c7099d34057b45e9536981f542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  recipes:
-  - AppleAppleApple
-  recipeResults:
-  - {fileID: 0}
 --- !u!4 &1297760532
 Transform:
   m_ObjectHideFlags: 0
@@ -3689,7 +3689,7 @@ GameObject:
   - component: {fileID: 1630158748}
   m_Layer: 5
   m_Name: Slot (1)
-  m_TagString: Untagged
+  m_TagString: slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3763,6 +3763,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 0}
+  i: 0
+  itemName: 
 --- !u!114 &1630158748
 MonoBehaviour:
   m_ObjectHideFlags: 0

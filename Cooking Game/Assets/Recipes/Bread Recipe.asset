@@ -10,7 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: New Crafting Recipe 1
+  m_Name: Bread Recipe
   m_EditorClassIdentifier: Assembly-CSharp::CraftingRecipe
-  Ingredients: []
-  Results: []
+  Ingredients:
+  - {Item: {fileID: 3842651510429099769, guid: 9251f2ec3a3bd425cb09bc86caadbdd8, type: 3}, Amount: 1}
+  - {Item: {fileID: 3842651510429099769, guid: 9251f2ec3a3bd425cb09bc86caadbdd8, type: 3}, Amount: 1}
+  Results:
+  - {Item: {fileID: 4366672216242594469, guid: e2ef1f09df7644326b058a4df5bfd99e, type: 3}, Amount: 1}
