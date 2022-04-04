@@ -27,4 +27,12 @@ public class Slot : MonoBehaviour
             GameObject.Destroy(child.gameObject);
         }
     }
+
+    public void EmptyInventory()
+    {
+        foreach(Transform child in transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
+    }
 }

@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 5166385363015022095, guid: 946460f62b7084aa28635842be3b914a,
     type: 3}
-  itemName: Apple
+  i: 0
 --- !u!58 &3842651510429099771
 CircleCollider2D:
   m_ObjectHideFlags: 0

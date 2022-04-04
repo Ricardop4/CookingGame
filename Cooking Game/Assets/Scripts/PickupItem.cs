@@ -8,7 +8,7 @@ public class PickupItem : MonoBehaviour
     [SerializeField] int i;
     
 
-    private Inventory inventory;
+    public Inventory inventory;
 
     private void Start()
     {
@@ -26,7 +26,6 @@ public class PickupItem : MonoBehaviour
                     //Item can be added
                     inventory.isFull[i] = true;
                     Instantiate(itemButton, inventory.slots[i].transform, false);
-                    inventory.slots[i] = itemButton;
                     Destroy(gameObject);
                     break;
                 }
