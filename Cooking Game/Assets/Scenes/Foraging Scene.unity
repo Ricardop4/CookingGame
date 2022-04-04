@@ -4821,6 +4821,12 @@ MonoBehaviour:
   RecipeResults:
   - {fileID: 4366672216242594469, guid: e0c342f3cff2f49f28e535e2221c9135, type: 3}
   canCook: 0
+  slots:
+  - {fileID: 1630158743}
+  - {fileID: 790960440}
+  - {fileID: 659810044}
+  - {fileID: 59465841}
+  - {fileID: 502533886}
 --- !u!4 &1297760532
 Transform:
   m_ObjectHideFlags: 0
