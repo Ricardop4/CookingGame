@@ -14,10 +14,7 @@ public class SpawnInGame : MonoBehaviour
 
     void Start()
     {
-        while(true)
-        {
         StartCoroutine(ExampleCoroutine());
-        }
     }
     IEnumerator ExampleCoroutine()
     {
