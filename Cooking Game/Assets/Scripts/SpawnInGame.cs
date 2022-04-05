@@ -4,21 +4,24 @@ using UnityEngine;
 
 public class SpawnInGame : MonoBehaviour
 {
-    [SerializeField] int items;
+    [SerializeField] int numberOfItems;
     [SerializeField] GameObject item;    
-    [SerializeField] float minX;
-    [SerializeField] float maxX;
-    [SerializeField] float minY;
-    [SerializeField] float maxY;
+    [SerializeField] float minX = -6.5f;
+    [SerializeField] float maxX = 6.5f;
+    [SerializeField] float minY = -1f;
+    [SerializeField] float maxY = 4.5f;
 
 
-    void Start()
+    void Update()
     {
-        StartCoroutine(ExampleCoroutine());
+        if(GameObject.FindGameObjectsWithTag("item").Length <= 10)
+        {
+            SpawnItem();
+        }
+
     }
     IEnumerator ExampleCoroutine()
     {
-        //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(2);
         SpawnItem();
     }

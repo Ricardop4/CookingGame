@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3842651510429099765}
   - component: {fileID: 3842651510429099770}
   - component: {fileID: 3842651510429099771}
+  - component: {fileID: 1115063608932132993}
   m_Layer: 0
   m_Name: Apple
-  m_TagString: Untagged
+  m_TagString: item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,6 +99,7 @@ MonoBehaviour:
   itemButton: {fileID: 5166385363015022095, guid: 946460f62b7084aa28635842be3b914a,
     type: 3}
   i: 0
+  inventory: {fileID: 0}
 --- !u!58 &3842651510429099771
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -114,3 +116,21 @@ CircleCollider2D:
   m_Offset: {x: 0.03208056, y: -0.061371744}
   serializedVersion: 2
   m_Radius: 0.42328563
+--- !u!114 &1115063608932132993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3842651510429099769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2672ff6e5f21f48e692a56c66117c7e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfItems: []
+  item: {fileID: 3842651510429099769}
+  minX: -6.5
+  maxX: 6.5
+  minY: -1
+  maxY: 4.5

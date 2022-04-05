@@ -499,6 +499,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bread
       objectReference: {fileID: 0}
+    - target: {fileID: 4366672216242594469, guid: e2ef1f09df7644326b058a4df5bfd99e,
+        type: 3}
+      propertyPath: m_TagString
+      value: item
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2ef1f09df7644326b058a4df5bfd99e, type: 3}
 --- !u!1 &163870034
@@ -632,6 +637,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1556094455}
     m_Modifications:
+    - target: {fileID: 1794609211, guid: e0c342f3cff2f49f28e535e2221c9135, type: 3}
+      propertyPath: minY
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2359715434624493179, guid: e0c342f3cff2f49f28e535e2221c9135,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -691,6 +700,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Jam
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366672216242594469, guid: e0c342f3cff2f49f28e535e2221c9135,
+        type: 3}
+      propertyPath: m_TagString
+      value: item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c342f3cff2f49f28e535e2221c9135, type: 3}
@@ -3270,12 +3284,12 @@ PrefabInstance:
     - target: {fileID: 2359715434624493179, guid: e2ef1f09df7644326b058a4df5bfd99e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.2070315
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 2359715434624493179, guid: e2ef1f09df7644326b058a4df5bfd99e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.796875
+      value: -1.06
       objectReference: {fileID: 0}
     - target: {fileID: 2359715434624493179, guid: e2ef1f09df7644326b058a4df5bfd99e,
         type: 3}
@@ -3326,6 +3340,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bread (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366672216242594469, guid: e2ef1f09df7644326b058a4df5bfd99e,
+        type: 3}
+      propertyPath: m_TagString
+      value: item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2ef1f09df7644326b058a4df5bfd99e, type: 3}
@@ -3865,6 +3884,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Apple
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842651510429099769, guid: 9251f2ec3a3bd425cb09bc86caadbdd8,
+        type: 3}
+      propertyPath: m_TagString
+      value: item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9251f2ec3a3bd425cb09bc86caadbdd8, type: 3}
@@ -5947,30 +5971,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719626065}
   m_CullTransparentMesh: 0
---- !u!1 &1794609207 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4366672216242594469, guid: e0c342f3cff2f49f28e535e2221c9135,
-    type: 3}
-  m_PrefabInstance: {fileID: 168351984}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1794609211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794609207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2672ff6e5f21f48e692a56c66117c7e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items: 0
-  item: {fileID: 4366672216242594469, guid: e0c342f3cff2f49f28e535e2221c9135, type: 3}
-  minX: -6.5
-  maxX: 6.5
-  minY: -2
-  maxY: 4
 --- !u!1 &1813336670
 GameObject:
   m_ObjectHideFlags: 0
@@ -6675,6 +6675,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry
       objectReference: {fileID: 0}
+    - target: {fileID: 4366672216242594469, guid: 4d60638365bcc4befa54ad97dcbf6da7,
+        type: 3}
+      propertyPath: m_TagString
+      value: item
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d60638365bcc4befa54ad97dcbf6da7, type: 3}
 --- !u!1 &1973084669
@@ -7117,6 +7122,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Apple (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842651510429099769, guid: 9251f2ec3a3bd425cb09bc86caadbdd8,
+        type: 3}
+      propertyPath: m_TagString
+      value: item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9251f2ec3a3bd425cb09bc86caadbdd8, type: 3}
