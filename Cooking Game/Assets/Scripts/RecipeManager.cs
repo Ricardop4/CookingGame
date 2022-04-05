@@ -7,7 +7,7 @@ public class RecipeManager : MonoBehaviour
     [SerializeField] List<GameObject> RecipeResults;
     [SerializeField] bool canCook;
     [SerializeField] public GameObject[] slots;
-    int numberOfResults;
+    [SerializeField] int numberOfResults = 0;
     GameObject item;
 
     int itemsInInventory = 0;
@@ -17,7 +17,7 @@ public class RecipeManager : MonoBehaviour
     private Transform player;
 
 
-    int i = Random.Range(0, 1);
+
     
 
     private void Start()
@@ -55,6 +55,7 @@ public class RecipeManager : MonoBehaviour
             canCook = false;
             //choose a random game object from list and instantiate near player
             Vector2 playerPos = new Vector2(player.position.x + Random.Range(-1f,1.1f), player.position.y + 2);
+            int i = Random.Range(0, numberOfResults);
             Instantiate(RecipeResults[i], playerPos, Quaternion.identity);
             Debug.Log("I have cooked your food");
             //Destroy all items in inventory

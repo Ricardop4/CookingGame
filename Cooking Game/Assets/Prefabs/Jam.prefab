@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1794609211}
   m_Layer: 0
   m_Name: Jam
-  m_TagString: Untagged
+  m_TagString: item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2672ff6e5f21f48e692a56c66117c7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfItems: []
+  numberOfItems: 5
   item: {fileID: 4366672216242594469}
   minX: -6.5
   maxX: 6.5

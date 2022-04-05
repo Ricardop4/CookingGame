@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Start Scene.unity
+    guid: 886777f36bf9742dc979b031ae6275a8
+  - enabled: 1
+    path: Assets/Scenes/Instructions Scene.unity
+    guid: facb445bba89249fd91d36439ab2d940
+  - enabled: 1
     path: Assets/Scenes/Foraging Scene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Cooking Scene.unity
-    guid: 6cdcb4360f1b94e9994d532d2d8492cb
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

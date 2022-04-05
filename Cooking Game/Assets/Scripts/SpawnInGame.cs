@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SpawnInGame : MonoBehaviour
 {
-    [SerializeField] int numberOfItems;
     [SerializeField] GameObject item;    
     [SerializeField] float minX = -6.5f;
     [SerializeField] float maxX = 6.5f;
@@ -14,16 +13,10 @@ public class SpawnInGame : MonoBehaviour
 
     void Update()
     {
-        if(GameObject.FindGameObjectsWithTag("item").Length <= 10)
+        if(GameObject.FindGameObjectsWithTag("item").Length <= 9)
         {
             SpawnItem();
         }
-
-    }
-    IEnumerator ExampleCoroutine()
-    {
-        yield return new WaitForSeconds(2);
-        SpawnItem();
     }
 
     private void SpawnItem()
