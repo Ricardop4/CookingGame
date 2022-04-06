@@ -9,7 +9,7 @@ public class RecipeManager : MonoBehaviour
     [SerializeField] AudioClip cookSound;
     [SerializeField] List<GameObject> RecipeResults;//List of random results
     [SerializeField] bool canCook;//Enables player to cook or not
-    [SerializeField] int numberOfResults = 0;//Allows code to choose random with a maximum number
+    [SerializeField] int numberOfResults;//Allows code to choose random with a maximum number
     [SerializeField] List<GameObject> slots;
 
     int itemsInInventory = 0;
