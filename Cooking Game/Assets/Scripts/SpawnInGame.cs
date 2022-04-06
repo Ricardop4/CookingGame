@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnInGame : MonoBehaviour
-{
-    [SerializeField] GameObject item;    
+{   
+    //State variables
+    [SerializeField] List<GameObject> spawnableItems;  
+    [SerializeField] int numberOfItems;  
     [SerializeField] float minX = -6.5f;
     [SerializeField] float maxX = 6.5f;
     [SerializeField] float minY = -1f;
     [SerializeField] float maxY = 4.5f;
-
 
     void Update()
     {
@@ -21,7 +22,8 @@ public class SpawnInGame : MonoBehaviour
 
     private void SpawnItem()
     {
-        Vector2 newPos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
-        Instantiate(item, newPos, Quaternion.identity);
+        int i = Random.Range(0, numberOfItems);//Chooses which items to spawn
+        Vector2 newPos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));//Sets coordinates of where to spawn
+        Instantiate(spawnableItems[i], newPos, Quaternion.identity);//Spawns item
     }
 }

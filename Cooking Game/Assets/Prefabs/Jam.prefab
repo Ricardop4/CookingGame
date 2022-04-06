@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 823033128688724871}
   - component: {fileID: 1975579169931352631}
   - component: {fileID: -3789123123034945407}
-  - component: {fileID: 1794609211}
   m_Layer: 0
   m_Name: Jam
   m_TagString: item
@@ -116,21 +115,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &1794609211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4366672216242594469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2672ff6e5f21f48e692a56c66117c7e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberOfItems: 5
-  item: {fileID: 4366672216242594469}
-  minX: -6.5
-  maxX: 6.5
-  minY: -1
-  maxY: 4.5

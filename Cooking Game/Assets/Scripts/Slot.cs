@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Slot : MonoBehaviour
 {
-    private Inventory inventory;
+    //State variables
     [SerializeField] int i;
+    //Cached references
+    private Inventory inventory;
 
     private void Start()
     {
@@ -16,6 +18,7 @@ public class Slot : MonoBehaviour
     {
         if (transform.childCount <= 0)
         {
+            //Finds out if the inventory is full
             inventory.isFull[i] = false;
         }
     }
@@ -23,6 +26,7 @@ public class Slot : MonoBehaviour
     {
         foreach(Transform child in transform)
         {
+            //Destroys the button item image and spawns in game
             child.GetComponent<Spawn>().SpawnDroppedItem();
             GameObject.Destroy(child.gameObject);
         }
@@ -32,7 +36,7 @@ public class Slot : MonoBehaviour
     {
         foreach(Transform child in transform)
         {
-            GameObject.Destroy(child.gameObject);
+            GameObject.Destroy(child.gameObject);//Destroys item in inventory
         }
     }
 }

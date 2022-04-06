@@ -3,22 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RecipeManager : MonoBehaviour
-{
-    [SerializeField] List<GameObject> RecipeResults;
-    [SerializeField] bool canCook;
-    [SerializeField] public GameObject[] slots;
-    [SerializeField] int numberOfResults = 0;
-    GameObject item;
+{   
+    //State variables
+    [SerializeField] List<GameObject> RecipeResults;//List of random results
+    [SerializeField] bool canCook;//Enables player to cook or not
+    [SerializeField] int numberOfResults = 0;//Allows code to choose random with a maximum number
+    [SerializeField] List<GameObject> slots;
 
     int itemsInInventory = 0;
 
     //cached references
+    GameObject item;
     private Inventory inventory;
     private Transform player;
-
-
-
-    
 
     private void Start()
     {
@@ -28,20 +25,20 @@ public class RecipeManager : MonoBehaviour
 
     private void Update()
     {
-        itemsInInventory = 0;
+        itemsInInventory = 0;//Looks for inventory slots and figures out if they are full
         for(int i = 0; i < inventory.slots.Length; i++)
         {
             if (inventory.isFull[i] == true)
             {
-                itemsInInventory++;
+                itemsInInventory++;//Counts how many items the player currently has
             }
         }
         if(itemsInInventory >= 3)
         {   
-            Debug.Log("You can cook now!");
+            //Debug.Log("You can cook now!");
             canCook = true;
         } else {
-            Debug.Log("Collect more food items first? maybe? just a suggestion.");
+            //Debug.Log("Collect more food items first!");
             canCook = false;
         }
     }
@@ -52,16 +49,18 @@ public class RecipeManager : MonoBehaviour
         itemsInInventory = 0;
         if(canCook)
         {
+            //Disables canCook
             canCook = false;
-            //choose a random game object from list and instantiate near player
+            //Finds the players location and sets spawn to near player
             Vector2 playerPos = new Vector2(player.position.x + Random.Range(-1f,1.1f), player.position.y + 2);
+            //choose a random game object from list and instantiate near player
             int i = Random.Range(0, numberOfResults);
             Instantiate(RecipeResults[i], playerPos, Quaternion.identity);
-            Debug.Log("I have cooked your food");
+            //Debug.Log("I have cooked your food");
             //Destroy all items in inventory
             foreach(GameObject slot in slots)
             {
-                slot.GetComponent<Slot>().EmptyInventory();
+                slot.GetComponent<Slot>().EmptyInventory();//Find all the slots and empty them or destroy GameObject
             }
         }
     }

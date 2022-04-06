@@ -119,7 +119,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8433584764869945235}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -5319180408167613802}
+        m_MethodName: Use
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3929999439132864092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +156,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a67418f78b872497692b9eb64bebccba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  currentScore: 0
-  foodPoints: 15
+  foodPoints: 40

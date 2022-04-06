@@ -8,16 +8,16 @@ public class SceneLoader : MonoBehaviour {
 	public void LoadNextScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex + 1);
+        SceneManager.LoadScene(currentSceneIndex + 1);//Loads next scene
     }
 
     public void LoadStartScene()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0);//Loads start screen
     }
 
     public void QuitGame()
     {
-        Application.Quit();
+        Application.Quit();//Quits game
     }
 }

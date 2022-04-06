@@ -120,9 +120,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5996407405033568864, guid: c9971b1c2e6384616b9927c7d4976a74,
-          type: 3}
-        m_MethodName: AddToScore
+      - m_Target: {fileID: -2478914707328277348}
+        m_MethodName: Use
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

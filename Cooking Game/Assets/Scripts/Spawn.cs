@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawn : MonoBehaviour
 {
-
+    //Cached references
     [SerializeField] GameObject item;
     private Transform player;
 
@@ -15,12 +15,8 @@ public class Spawn : MonoBehaviour
 
     public void SpawnDroppedItem()
     {
+        //Spawns item near player
         Vector2 playerPos = new Vector2(player.position.x + Random.Range(-1f,1.1f), player.position.y + 2);
         Instantiate(item, playerPos, Quaternion.identity);
-    }
-
-    public void DestroyUsedItem()
-    {
-        Destroy(item);
     }
 }
