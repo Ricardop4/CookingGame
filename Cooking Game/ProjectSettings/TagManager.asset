@@ -8,6 +8,7 @@ TagManager:
   - slot
   - item
   - score
+  - sound
   layers:
   - Default
   - TransparentFX

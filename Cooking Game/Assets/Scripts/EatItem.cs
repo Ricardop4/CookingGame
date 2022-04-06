@@ -11,8 +11,13 @@ public class EatItem : MonoBehaviour
     public void Use()
     {
         //Simply adds to score and destroys gameObject
-        GameObject.FindGameObjectWithTag("score").GetComponent<Score>().AddToScore(foodPoints);//Adds to score
-
+        GameObject.FindGameObjectWithTag("score").GetComponent<Score>().AddToScore(foodPoints);
+        EatSFX();
         GameObject.Destroy(gameObject);
+    }
+
+    private void EatSFX()
+    {
+        GameObject.FindGameObjectWithTag("sound").GetComponent<SoundManager>().PlayEatSound();
     }
 }
