@@ -7,6 +7,7 @@ public class PickupItem : MonoBehaviour
     //State variables
     [SerializeField] public GameObject itemButton;
     [SerializeField] int i;
+    [SerializeField] AudioClip[] pickupSounds;
 
     //Cached references
 
@@ -29,6 +30,8 @@ public class PickupItem : MonoBehaviour
                     //Item can be added in the inventory slot that is empty
                     inventory.isFull[i] = true;
                     Instantiate(itemButton, inventory.slots[i].transform, false);//false for world coordinates
+                    AudioClip clip = pickupSounds[UnityEngine.Random.Range(0, pickupSounds.Length)];
+                    myAudioSource.PlayOneShot(clip);
                     Destroy(gameObject);//Gets rid of the item
                     break;//Prevents further cloning of items
                 }

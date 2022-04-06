@@ -5,6 +5,8 @@ using UnityEngine;
 public class RecipeManager : MonoBehaviour
 {   
     //State variables
+
+    [SerializeField] AudioClip cookSound;
     [SerializeField] List<GameObject> RecipeResults;//List of random results
     [SerializeField] bool canCook;//Enables player to cook or not
     [SerializeField] int numberOfResults = 0;//Allows code to choose random with a maximum number
@@ -62,7 +64,14 @@ public class RecipeManager : MonoBehaviour
             {
                 slot.GetComponent<Slot>().EmptyInventory();//Find all the slots and empty them or destroy GameObject
             }
+            PlayCookingSound();
         }
     }
+
+
+        private void PlayCookingSound()
+        {
+            AudioSource.PlayClipAtPoint(cookSound, Camera.main.transform.position);
+        }
 
 }
