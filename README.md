@@ -39,6 +39,3 @@ I was trying to figure out how to give all the food items different points when 
 
 ### If you were doing it this app all over again, what do you wish you knew that you didn't?
 If I were to redo this app all over again, I wish I knew how to figure out what items were in the inventory and compare it to the recipes I had and make a unique food item. Instead of generating a random food item everytime the Cooking Time button was pressed. Although, this mechanic fits in with the name "Cooking Craze".
-
-### Anything else that you'd like your teacher to know and something you'd like to explain that might help you earn back grades?
-
